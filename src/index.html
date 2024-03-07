@@ -1,0 +1,19 @@
+  <main>
+    <div :class="display">
+      <div class="frontFace">
+        <h1 v-show="show">Trying to get your location...</h1>
+      </div>
+      <div class="backFace">
+        <i :class="weatherIcons"></i>
+        <h1>{{ weather }}</h1>
+        <h2>{{ animateTemp }}{{ temp.unit }}</h2>
+        <small @click="C2F">Deg. F <span>&harr;</span> Deg. C</small>
+        <h4>Location: <strong>{{ cityName }}, {{ country }}</strong>.</h4>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <a href="https://github.com/Mohit-005" class="link">
+      Made by Mohit
+    </a>
+  </footer>
